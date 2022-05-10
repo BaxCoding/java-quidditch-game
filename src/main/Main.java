@@ -1,6 +1,5 @@
 package src.main;
 
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -10,12 +9,12 @@ import src.main.models.Game;
 import src.main.models.Team;
 
 public class Main {
-
     static Game game;
     static final String TEAMS_FILE = "src/main/teams.txt";
     static final String PLAYS_FILE = "src/main/plays.txt";
 
     public static void main(String[] args) {
+        
         try {
             String[][] data = getData();
             game = new Game(
@@ -26,11 +25,8 @@ public class Main {
             printResult();
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
-        }
-
-          
+        }          
     }
-
 
     /**
      * Function name: getData
@@ -96,6 +92,4 @@ public class Main {
             System.out.println(e.getMessage());
         }
     }
-
-
   }

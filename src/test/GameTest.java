@@ -9,12 +9,10 @@ import src.main.models.Team;
 
 
 public class GameTest {
-
     Game game;
 
     @Before
-    public void setup() {       
-
+    public void setup() {  
         game = new Game(
             new Team("GRYFFINDOR", "Oliver", "Harry", 
             new String[] {"Angelina", "Ginny", "Katie"}),
@@ -48,11 +46,4 @@ public class GameTest {
         game.catchSnitch(team);
         assertEquals(Game.getSnitchPoints(), game.getScore(team));
     }
-
-
-
-
-
-
-
 }

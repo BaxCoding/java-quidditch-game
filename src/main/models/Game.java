@@ -89,5 +89,4 @@ public class Game {
 
         return replacePlaceholder(play, placeholder, value);
     }
-
 }
